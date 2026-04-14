@@ -19,10 +19,12 @@ Claude Code, Codex, direct APIs, and human-curated annotations can all sit upstr
 The repository is public, but the package is still in the prototype stage.
 What exists now is a clean prototype skeleton with a stable public surface, toy example, and extension path.
 
-The first concrete post-prototype build wave is now being executed in three ordered parts:
+The current post-prototype build wave is being executed in three ordered parts:
 - stronger point-in-time packet contracts
 - richer score decomposition
 - richer validation expansion
+
+The next validation-comparison wave is benchmark hierarchy construction.
 
 ## Current package surface
 
@@ -64,21 +66,23 @@ Run tests:
 - docs/wave1-implementation-spec.md
 - docs/validation-expansion-plan.md
 - docs/validation-layer.md
+- docs/benchmark-implementation-plan.md
+- docs/benchmark-hierarchy.md
 - examples/README.md
 
-## Expansion direction
+## Benchmark direction
 
-The current build wave is focused on:
-- realistic point-in-time input contracts
-- richer score decomposition and diagnostics
-- rolling multi-period validation
+The current benchmark hierarchy is:
+- `1/n`
+- static factor benchmark
+- `FF6 + BAB + QMJ`
+- DOI-style volatility-managed multifactor benchmark
+- `fineval` strategy family
 
-See:
-- docs/prototype-expansion-roadmap.md
-- docs/extension-architecture.md
-- docs/wave1-implementation-spec.md
-- docs/validation-expansion-plan.md
-- docs/validation-layer.md
+The immediate next benchmark implementation priority is:
+- ingest AQR BAB/QMJ cleanly
+- build the static `FF6 + BAB + QMJ` comparator first
+- then add the DOI-style high-bar benchmark
 
 ## Current scope
 
@@ -95,7 +99,7 @@ Out of scope for current prototype:
 - cloud orchestration
 - multi-model runtime logic inside core package
 - large-scale empirical ingestion
-- factor-adjusted validation outputs
+- full factor-adjusted validation outputs
 - benchmark registry
 
 ## Design boundary

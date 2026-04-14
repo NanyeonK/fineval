@@ -10,3 +10,5 @@
 - wave1-implementation-spec.md -- concrete first post-prototype implementation spec for packet contracts, score decomposition, and rolling validation
 - validation-expansion-plan.md -- execution plan for the current validation expansion wave
 - validation-layer.md -- current validation architecture, rolling runner behavior, and reporting layer
+- benchmark-implementation-plan.md -- execution plan for benchmark hierarchy build-out
+- benchmark-hierarchy.md -- benchmark ladder from 1/n to DOI-style multifactor competitors
