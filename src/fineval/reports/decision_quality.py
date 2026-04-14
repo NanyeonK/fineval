@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from fineval.eval.fineval import decision_quality_score
+from fineval.eval.fineval import decision_quality_breakdown
 from fineval.reports.base import BaseReport
 
 
@@ -10,6 +10,8 @@ from fineval.reports.base import BaseReport
 class DecisionQualityReport(BaseReport):
     metrics: dict[str, float]
     weights: dict[str, float]
+    weighted_components: dict[str, float]
+    flags: list[str]
 
     @classmethod
     def from_metrics(
@@ -17,16 +19,12 @@ class DecisionQualityReport(BaseReport):
         metrics: dict[str, float],
         weights: dict[str, float] | None = None,
     ) -> 'DecisionQualityReport':
-        resolved_weights = weights or {
-            'structural_validity': 0.25,
-            'temporal_integrity': 0.20,
-            'robustness': 0.20,
-            'economic_coherence': 0.35,
-        }
-        score = decision_quality_score(metrics, weights=resolved_weights)
+        breakdown = decision_quality_breakdown(metrics, weights=weights)
         return cls(
             report_type='decision_quality',
-            score=score,
+            score=breakdown['score'],
             metrics=dict(metrics),
-            weights=dict(resolved_weights),
+            weights=dict(breakdown['weights']),
+            weighted_components=dict(breakdown['weighted_components']),
+            flags=list(breakdown['flags']),
         )
