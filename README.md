@@ -19,6 +19,9 @@ Claude Code, Codex, direct APIs, and human-curated annotations can all sit upstr
 The repository is public, but the package is still in the prototype stage.
 What exists now is a clean prototype skeleton with a stable public surface, toy example, and extension path.
 
+The first concrete post-prototype build wave is now specified in:
+- docs/wave1-implementation-spec.md
+
 ## Current package surface
 
 Top-level imports:
@@ -56,6 +59,7 @@ Run tests:
 - docs/model_agnostic_runtime.md
 - docs/prototype-expansion-roadmap.md
 - docs/extension-architecture.md
+- docs/wave1-implementation-spec.md
 - examples/README.md
 
 ## Expansion direction
@@ -64,14 +68,11 @@ The next build wave should extend the prototype in this order:
 - realistic point-in-time input contracts
 - richer score decomposition and diagnostics
 - rolling multi-period validation
-- benchmark and baseline comparison
-- calibration and robustness diagnostics
-- experiment management layer
-- CI and public package polish
 
 See:
 - docs/prototype-expansion-roadmap.md
 - docs/extension-architecture.md
+- docs/wave1-implementation-spec.md
 
 ## Current scope
 
