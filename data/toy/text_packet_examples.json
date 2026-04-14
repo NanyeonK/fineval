@@ -1,0 +1,19 @@
+[
+  {
+    "ticker": "NVDA",
+    "as_of_date": "2024-01-31",
+    "packet_id": "nvda_2024_01",
+    "sources": [
+      {
+        "source_type": "earnings_call",
+        "published_at": "2024-01-20",
+        "text": "AI demand remains strong."
+      },
+      {
+        "source_type": "news",
+        "published_at": "2024-01-28",
+        "text": "Capex outlook revised upward."
+      }
+    ]
+  }
+]
