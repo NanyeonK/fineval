@@ -14,6 +14,11 @@ fineval is a package-first research framework for turning investment decision ob
 The package is model-agnostic.
 Claude Code, Codex, direct APIs, and human-curated annotations can all sit upstream as long as they produce a stable file and data contract.
 
+## Current status
+
+The repository is public, but the package is still in the prototype stage.
+What exists now is a clean prototype skeleton with a stable public surface, toy example, and extension path.
+
 ## Current package surface
 
 Top-level imports:
@@ -44,17 +49,29 @@ Run toy end-to-end example:
 Run tests:
 - PYTHONPATH=src pytest tests -q
 
-## Repository status
-
-This package is currently being prepared for split into an independent repository.
-The code already follows a package-first layout and now includes a release-oriented README, license, changelog, examples, and docs.
-
 ## Docs
 
 - docs/quickstart.md
 - docs/api-overview.md
 - docs/model_agnostic_runtime.md
+- docs/prototype-expansion-roadmap.md
+- docs/extension-architecture.md
 - examples/README.md
+
+## Expansion direction
+
+The next build wave should extend the prototype in this order:
+- realistic point-in-time input contracts
+- richer score decomposition and diagnostics
+- rolling multi-period validation
+- benchmark and baseline comparison
+- calibration and robustness diagnostics
+- experiment management layer
+- CI and public package polish
+
+See:
+- docs/prototype-expansion-roadmap.md
+- docs/extension-architecture.md
 
 ## Current scope
 
@@ -64,7 +81,7 @@ Included now:
 - lightweight validation gates
 - runnable toy example
 
-Out of scope for current release candidate:
+Out of scope for current prototype:
 - production dashboards
 - cloud orchestration
 - multi-model runtime logic inside core package
@@ -74,11 +91,3 @@ Out of scope for current release candidate:
 
 Keep runtime-specific prompting and orchestration outside src/fineval.
 The core package should consume stable data objects, not model-specific transport logic.
-
-## Working location
-
-Current development location:
-- /home/nanyeon99/project/llm_blackliterman
-
-Planned next step:
-- split fineval into an independent git repository with the public-facing subset only
