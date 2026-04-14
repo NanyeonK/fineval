@@ -8,3 +8,5 @@
 - prototype-expansion-roadmap.md -- recommended path from current prototype to research-grade package
 - extension-architecture.md -- architectural rules for extending the package without breaking boundaries
 - wave1-implementation-spec.md -- concrete first post-prototype implementation spec for packet contracts, score decomposition, and rolling validation
+- validation-expansion-plan.md -- execution plan for the current validation expansion wave
+- validation-layer.md -- current validation architecture, rolling runner behavior, and reporting layer

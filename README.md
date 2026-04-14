@@ -19,8 +19,10 @@ Claude Code, Codex, direct APIs, and human-curated annotations can all sit upstr
 The repository is public, but the package is still in the prototype stage.
 What exists now is a clean prototype skeleton with a stable public surface, toy example, and extension path.
 
-The first concrete post-prototype build wave is now specified in:
-- docs/wave1-implementation-spec.md
+The first concrete post-prototype build wave is now being executed in three ordered parts:
+- stronger point-in-time packet contracts
+- richer score decomposition
+- richer validation expansion
 
 ## Current package surface
 
@@ -60,11 +62,13 @@ Run tests:
 - docs/prototype-expansion-roadmap.md
 - docs/extension-architecture.md
 - docs/wave1-implementation-spec.md
+- docs/validation-expansion-plan.md
+- docs/validation-layer.md
 - examples/README.md
 
 ## Expansion direction
 
-The next build wave should extend the prototype in this order:
+The current build wave is focused on:
 - realistic point-in-time input contracts
 - richer score decomposition and diagnostics
 - rolling multi-period validation
@@ -73,6 +77,8 @@ See:
 - docs/prototype-expansion-roadmap.md
 - docs/extension-architecture.md
 - docs/wave1-implementation-spec.md
+- docs/validation-expansion-plan.md
+- docs/validation-layer.md
 
 ## Current scope
 
@@ -81,12 +87,16 @@ Included now:
 - structured reports and presets
 - lightweight validation gates
 - runnable toy example
+- rolling multi-period validation runner
+- rolling-aware portfolio validation report
 
 Out of scope for current prototype:
 - production dashboards
 - cloud orchestration
 - multi-model runtime logic inside core package
 - large-scale empirical ingestion
+- factor-adjusted validation outputs
+- benchmark registry
 
 ## Design boundary
 
