@@ -12,3 +12,4 @@
 - validation-layer.md -- current validation architecture, rolling runner behavior, and reporting layer
 - benchmark-implementation-plan.md -- execution plan for benchmark hierarchy build-out
 - benchmark-hierarchy.md -- benchmark ladder from 1/n to DOI-style multifactor competitors
+- doi-benchmark-replication-plan.md -- plan for porting the DOI benchmark into fineval using accessible factor inputs

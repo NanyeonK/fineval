@@ -24,7 +24,7 @@ The current post-prototype build wave is being executed in three ordered parts:
 - richer score decomposition
 - richer validation expansion
 
-The next validation-comparison wave is benchmark hierarchy construction.
+The next benchmark-comparison wave is being organized around a benchmark ladder and a DOI-style high-bar comparator.
 
 ## Current package surface
 
@@ -68,16 +68,22 @@ Run tests:
 - docs/validation-layer.md
 - docs/benchmark-implementation-plan.md
 - docs/benchmark-hierarchy.md
+- docs/doi-benchmark-replication-plan.md
 - examples/README.md
 
 ## Benchmark direction
 
-The current benchmark hierarchy is:
+The benchmark ladder is:
 - `1/n`
 - static factor benchmark
 - `FF6 + BAB + QMJ`
 - DOI-style volatility-managed multifactor benchmark
 - `fineval` strategy family
+
+Current benchmark assets already available in the workspace:
+- AQR monthly BAB workbook
+- AQR monthly QMJ workbook
+- DOI benchmark replication package from Mendeley Data
 
 The immediate next benchmark implementation priority is:
 - ingest AQR BAB/QMJ cleanly
